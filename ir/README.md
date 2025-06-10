@@ -72,3 +72,8 @@ void loop() {
 }
 ```
 
+## Exercise
+
+Connect an LED and the IR sensor to your Arduino, then turn on the LED when a 'close' object is detected, otherwise, keep the LED off.
+
+Try programming it yourself, and once you're finished, check out the solution here: [./irsensor.ino](./irsensor.ino) 
