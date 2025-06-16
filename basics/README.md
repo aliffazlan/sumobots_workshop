@@ -18,11 +18,11 @@ What did we just do? Let's go through it step by step. Assigning a variable usua
 
 - In this case, the data type we used was `int`; short form of **"Integer"**, which means whole numbers.
 - Then we have the variable name, which we called `num`. Note that variable names are alphanumeric (meaning only numbers and letters), and must start with a letter.
-- The `=` sign assigns the value to the variable. Don't get confused with `==` (double equals) which we will see later. 
+- The `=` sign assigns the value to the variable. Don't get confused with `==` (double equals) which we will see later.
 - The value is simply the value we wanna set (pretty self explanatory xd). Make sure that the value makes sense with the data type we are using. For example, if we are using `int`, it wouldn't make sense to set the value to something like `3.14`, which is a `float`
 - Note the semicolon (`;`) at the end. Most lines will end in a semicolon to tell the program that its the end. One of the most common mistakes is leaving out the semicolons on your lines.
 
-Variables can be used anywhere in your program, such as in conditions *(which you will see later)*, and setting other variables as well. A very common technique people use is incrementing a variable, which looks like this:
+Variables can be used anywhere in your program, such as in conditions _(which you will see later)_, and setting other variables as well. A very common technique people use is incrementing a variable, which looks like this:
 
 ```cpp
 num = num + 1;
@@ -34,28 +34,28 @@ Assuming `num` was already declared as an `int` previously, this line of code wi
 
 I briefly mentioned data types before, but what are they and what types exist? Data types can vary between different programming languages, but some remain largely similar. For the sake of the workshop, we will focus on types in C++, which is what the Arduino language is based on.
 
-| Data Type | what | Example |
-| ------ | ------ | ------ |
-| `int` | Whole Numbers | `int x = 5;` <br> `int y = -3;` |
-| `float` | Decimal Point Numbers | `float x = 3.14;` <br> `float y = 7.0;`|
-| `long` | Big Integers | `long x = 1234567891234;` <br> `long y = 420 * 420 * 420;`|
-| `char` | Single Character | `char c = 'a';` <br> `char c2 = '6';`|
-| `String` | Text | `String s = "Hello!"` <br> `String msg = "12345"`|
-| `bool` | Boolean (True or False) | `bool b = true;` <br> `bool b = false;`|
+| Data Type | what                    | Example                                                    |
+| --------- | ----------------------- | ---------------------------------------------------------- |
+| `int`     | Whole Numbers           | `int x = 5;` <br> `int y = -3;`                            |
+| `float`   | Decimal Point Numbers   | `float x = 3.14;` <br> `float y = 7.0;`                    |
+| `long`    | Big Integers            | `long x = 1234567891234;` <br> `long y = 420 * 420 * 420;` |
+| `char`    | Single Character        | `char c = 'a';` <br> `char c2 = '6';`                      |
+| `String`  | Text                    | `String s = "Hello!"` <br> `String msg = "12345"`          |
+| `bool`    | Boolean (True or False) | `bool b = true;` <br> `bool b = false;`                    |
 
-There are many more data types, including custom made ones called *"structs"*, but we don't need to get into that yet (unless you want in which case go for it and search it up!!!)
+There are many more data types, including custom made ones called _"structs"_, but we don't need to get into that yet (unless you want in which case go for it and search it up!!!)
 
 ## Arithmetic
 
 You can do math using variables as well! All the basic operators you are familiar with can be used.
 
-| Symbol | Operator |
-| ------ | ------ |
-| `+` | Addition |
-| `-` | Subtraction |
-| `*` | Multiplication |
-| `/` | Division |
-| `%` | Modulus (take the remainder) |
+| Symbol | Operator                     |
+| ------ | ---------------------------- |
+| `+`    | Addition                     |
+| `-`    | Subtraction                  |
+| `*`    | Multiplication               |
+| `/`    | Division                     |
+| `%`    | Modulus (take the remainder) |
 
 For example:
 
@@ -78,14 +78,14 @@ What happens **if** we want to execute a piece of code only in a certain situati
 
 A condition essentially checks if a given statement is true, by using equalities:
 
-| Symbol | Operator |
-| ------ | ------ |
-| `==` | Is Equal |
-| `!=` | Not Equal |
-| `>` | Greater Than |
-| `<` | Less Than |
-| `>=` | Greater Than Or Equal |
-| `<=` | Less Than Or Equal |
+| Symbol | Operator              |
+| ------ | --------------------- |
+| `==`   | Is Equal              |
+| `!=`   | Not Equal             |
+| `>`    | Greater Than          |
+| `<`    | Less Than             |
+| `>=`   | Greater Than Or Equal |
+| `<=`   | Less Than Or Equal    |
 
 But how do we actually use conditions? We use something called an **"if statement"**. Here's what it looks like:
 
@@ -128,11 +128,11 @@ if (num == 10) {
 }
 ```
 
-In this example, the **code block** from the *else if* statement will be run **only if the first condition isn't met**. We can stack as many *else ifs* as we want. 
+In this example, the **code block** from the _else if_ statement will be run **only if the first condition isn't met**. We can stack as many _else ifs_ as we want.
 
-But what happens if none of the conditions in our *else ifs* are not met? We can use the `else` statement. This will run if none of the conditions in the block are run.
+But what happens if none of the conditions in our _else ifs_ are not met? We can use the `else` statement. This will run if none of the conditions in the block are run.
 
-Let's see the example again. This time, if the number is not 10, and is not even, then we want to multiply `num` by `3`. 
+Let's see the example again. This time, if the number is not 10, and is not even, then we want to multiply `num` by `3`.
 
 ```cpp
 if (num == 10) {
@@ -151,27 +151,30 @@ Take your time and make sure you understand the example! It can be a little diff
 loop makes code repeat
 
 2 type of loop:
+
 - for loop
 - while loop
 
-__for loop__
+****for loop****
 
 ```cpp
 for (int i = 0; i < 10; i++) {
     Serial.println(i);
 }
 ```
+
 `i` is counter
 goes from 0 to 9
 basically loops from starting number to end number
 
-__while loop__
+****while loop****
 
 ```cpp
 while (condition) {
     // code
 }
 ```
+
 keeps repeating the code while the condition is true
 same type of conditions as above
 
@@ -185,13 +188,12 @@ while (counter < 10) {
 }
 ```
 
-*(sorry i got bored of writing ill fix it later)*
-*(if u want more detail, feel free to msg me on discord* ***@walnutt*** *)*
-*(if ur from the future and this isnt fixed, msg me)*
+_(sorry i got bored of writing ill fix it later)_
+
+_(if u want more detail or explanations, feel free to msg me on discord_ **_@walnutt_**_, ill be happy to help out)_
+
+_(if ur from the future and this isnt fixed yet, msg me pls)_
 
 ## Exercises
 
-*No exercises here, since its kind of hard to see if you get things correct without printing, which you can learn in [Serial](../serial/README.md). The [Serial](../serial/README.md) exercises will have relevant content to practice basics.
-
-
-
+*No exercises here, since its kind of hard to see if you get things correct without printing, which you can learn in [Serial](../serial/README.md). The [Serial](../serial/README.md) exercises will have relevant content to practice basics.*
