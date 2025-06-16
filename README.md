@@ -8,7 +8,9 @@ To use this repo, just follow along with the links that are included in this rea
 
 ## Content
 
-### [Programming Basics](/basics/)
+### [Programming Basics](./basics/)
+
+### [Arduino](./arduino/)
 
 ### [Serial](./serial/)
 

@@ -118,7 +118,7 @@ digitalWrite(led_pin, HIGH);
 
 The _Arduino_ doesn't actually have the capability to write a true analog signal. However, it uses a special technique called **Pulse Width Modulation (PWM)**. This is when the pin turns on and off so fast that the voltage _appears_ to be between 0V and 5V. For example, if the PWM signal is high 50% of the time, and low the other 50% of the time, and it alternates between the two states super fast, then the output voltage will appear to be around 2.5V.
 
-[PWM Diagram](../assets/pwm.png)
+![PWM Diagram](../assets/pwm.png)
 
 Arduino does this all the background when we use `analogWrite(pinNumber, value)`. Since we use **PWM**, we can use either digital or analog to write. `value` must be a number between `0` and `255`, with `255` being the max voltage at 5V.
 
